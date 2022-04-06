@@ -39,4 +39,15 @@ for i in range(n):
             count += 1
 print(count)
 
+
+
+
+
+
+# N, M을 공백을 입력받기
+n, m = map
+
+
+
+
     

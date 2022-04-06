@@ -12,7 +12,7 @@ for i in range(n):
 
 ways = [(-1, 0), (1, 0), (0, -1), (0, 1)]
 
-def dfs(x, y):
+def bfs(x, y):
     # 큐 선언
     queue = deque()
     # 현재 위치 삽입, 방문 처리
@@ -34,6 +34,6 @@ def dfs(x, y):
                 queue.append((nx, ny))
                 graph[nx][ny] = graph[x][y] + 1
     return
-dfs(0, 0)
+bfs(0, 0)
 print(graph[n-1][m-1])
     
